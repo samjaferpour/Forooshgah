@@ -5,5 +5,6 @@ namespace Forooshgah.Services
     public interface IProductServices
     {
         Task<AddProductResponse> AddProduct(AddProductRequest addProductRequest);
+        Task<List<GetAllProductsResponse>> GetAllProducts();
     }
 }

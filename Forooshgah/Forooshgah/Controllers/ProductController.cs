@@ -21,5 +21,11 @@ namespace Forooshgah.Controllers
             var response = await _productServices.AddProduct(addProductRequest);
             return Ok(response);
         }
+        [HttpGet]
+        public async Task<IActionResult> ShowAllProducts()
+        {
+            var response = await _productServices.GetAllProducts();
+            return Ok(response);
+        }
     }
 }
